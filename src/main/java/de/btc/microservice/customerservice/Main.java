@@ -1,4 +1,4 @@
-package de.btc.microservice;
+package de.btc.microservice.customerservice;
 
 import de.btc.microservice.customerservice.core.AddressReferenceService;
 import de.btc.microservice.customerservice.core.ContractService;
