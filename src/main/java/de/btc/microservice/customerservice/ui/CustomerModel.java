@@ -1,7 +1,7 @@
-package de.btc.microservice.ui;
+package de.btc.microservice.customerservice.ui;
 
-import de.btc.microservice.core.CustomerService;
-import de.btc.microservice.model.Customer;
+import de.btc.microservice.customerservice.core.CustomerService;
+import de.btc.microservice.customerservice.model.Customer;
 
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;

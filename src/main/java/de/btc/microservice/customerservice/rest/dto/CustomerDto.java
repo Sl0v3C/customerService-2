@@ -1,4 +1,4 @@
-package de.btc.microservice.rest.dto;
+package de.btc.microservice.customerservice.rest.dto;
 
 import de.btc.microservice.model.AddressReference;
 import de.btc.microservice.model.Contract;

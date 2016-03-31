@@ -1,9 +1,9 @@
-package de.btc.microservice.rest;
+package de.btc.microservice.customerservice.rest;
 
 
-import de.btc.microservice.core.ContractService;
-import de.btc.microservice.model.Contract;
-import de.btc.microservice.rest.dto.ContractDto;
+import de.btc.microservice.customerservice.core.ContractService;
+import de.btc.microservice.customerservice.model.Contract;
+import de.btc.microservice.customerservice.rest.dto.ContractDto;
 
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
@@ -26,11 +26,11 @@ public class ContractRestService {
     @Path("/")
     @Produces("application/json")
     public List<ContractDto> getAllContracts() {
-        List<de.btc.microservice.model.Contract> contracts = contractService.loadAllContracts();
+        List<Contract> contracts = contractService.loadAllContracts();
         return contracts.stream().map(contract -> mapContractToDto(contract)).collect(Collectors.toList());
     }
 
-    private ContractDto mapContractToDto(de.btc.microservice.model.Contract contract) {
+    private ContractDto mapContractToDto(Contract contract) {
         ContractDto contractDto = new ContractDto();
         contractDto.setId(contract.getId());
         contractDto.setContractNumber(contract.getContractNumber());
@@ -49,7 +49,7 @@ public class ContractRestService {
     @Path("/{id}")
     @Produces("application/json")
     public ContractDto getContractById(@PathParam("id") Long id) {
-        de.btc.microservice.model.Contract contract = contractService.findContractById(id);
+        Contract contract = contractService.findContractById(id);
         if (contract != null) {
             return mapContractToDto(contract);
         }

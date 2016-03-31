@@ -1,4 +1,4 @@
-package de.btc.microservice.model;
+package de.btc.microservice.customerservice.model;
 
 
 import javax.persistence.Column;

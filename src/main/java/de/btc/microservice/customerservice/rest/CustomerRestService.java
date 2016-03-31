@@ -1,8 +1,8 @@
-package de.btc.microservice.rest;
+package de.btc.microservice.customerservice.rest;
 
-import de.btc.microservice.core.CustomerService;
-import de.btc.microservice.model.Customer;
-import de.btc.microservice.rest.dto.CustomerDto;
+import de.btc.microservice.customerservice.core.CustomerService;
+import de.btc.microservice.customerservice.model.Customer;
+import de.btc.microservice.customerservice.rest.dto.CustomerDto;
 
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
@@ -73,7 +73,7 @@ public class CustomerRestService {
     }
 
 
-    private CustomerDto mapCustomerToDto(de.btc.microservice.model.Customer customer) {
+    private CustomerDto mapCustomerToDto(Customer customer) {
         CustomerDto customerDto = new CustomerDto();
         customerDto.setId(customer.getId());
         customerDto.setFirstName(customer.getFirstName());

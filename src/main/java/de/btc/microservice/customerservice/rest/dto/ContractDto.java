@@ -1,4 +1,4 @@
-package de.btc.microservice.rest.dto;
+package de.btc.microservice.customerservice.rest.dto;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;

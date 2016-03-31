@@ -1,9 +1,9 @@
-package de.btc.microservice.rest;
+package de.btc.microservice.customerservice.rest;
 
 
-import de.btc.microservice.core.AddressReferenceService;
-import de.btc.microservice.model.AddressReference;
-import de.btc.microservice.rest.dto.AddressReferenceDto;
+import de.btc.microservice.customerservice.core.AddressReferenceService;
+import de.btc.microservice.customerservice.model.AddressReference;
+import de.btc.microservice.customerservice.rest.dto.AddressReferenceDto;
 
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;

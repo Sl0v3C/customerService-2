@@ -1,8 +1,7 @@
-package de.btc.microservice.core;
+package de.btc.microservice.customerservice.core;
 
-import de.btc.microservice.model.AddressReference;
-import de.btc.microservice.model.Contract;
-import de.btc.microservice.model.Customer;
+import de.btc.microservice.customerservice.model.AddressReference;
+import de.btc.microservice.customerservice.model.Customer;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;

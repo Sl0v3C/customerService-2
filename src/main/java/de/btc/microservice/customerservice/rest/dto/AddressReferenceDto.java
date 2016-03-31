@@ -1,8 +1,8 @@
-package de.btc.microservice.rest.dto;
+package de.btc.microservice.customerservice.rest.dto;
 
 
-import de.btc.microservice.model.AddressType;
-import de.btc.microservice.model.Customer;
+import de.btc.microservice.customerservice.model.AddressType;
+import de.btc.microservice.customerservice.model.Customer;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
