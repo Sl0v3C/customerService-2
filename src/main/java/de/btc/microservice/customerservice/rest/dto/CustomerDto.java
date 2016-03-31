@@ -1,8 +1,5 @@
 package de.btc.microservice.customerservice.rest.dto;
 
-import de.btc.microservice.model.AddressReference;
-import de.btc.microservice.model.Contract;
-
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
